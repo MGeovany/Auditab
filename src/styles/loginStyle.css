@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root {
+  /* Fonts: */
+  --poppins-regular: "Poppins", sans-serif;
+
+  /* Colors: */
+  --navy: #15274c;
+  --white: #ffffff;
+  --gray: #bfc5cf;
+  --gray-light: #d2d3d9;
+  --black: #111217;
+  --mate: #333333;
+  --purple-dark: #362e61;
+  --purple-light: #7260d9;
+  --purple-light2: #7771de;
+  --blue: #0065ff;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+  margin-top: 55px;
+  font-family: var(--poppins-regular);
+}
+
+.card-container {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: 560px;
+  height: 880px;
+
+  border-radius: 13px;
+  box-shadow: 5px 8px 29px #00000029;
+}
+
+.login-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  margin: 0 110px;
+}
+
+h1 {
+  margin: 5px 0;
+  font-family: var(--poppins-regular);
+  color: var(--navy);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  margin-top: 30px;
+
+  font-family: var(--poppins-regular);
+  color: var(--gray);
+}
+
+a {
+  color: var(--blue);
+}
+
+p {
+  font-size: 15px;
+  color: var(--gray);
+  text-align: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+
+  margin-bottom: 25px;
+}
+
+.field > div {
+  display: flex;
+  align-items: center;
+}
+
+.svg-icon {
+  width: 15px;
+  height: 20px;
+
+  margin-right: 7px;
+}
+
+input {
+  width: 100%;
+}
+
+.btn {
+  border-radius: 5px;
+  width: 262px;
+  height: 38px;
+
+  background: #7260d9 0% 0% no-repeat padding-box;
+  color: white;
+  border: 0;
+  cursor: pointer;
+
+  font-family: var(--poppins-regular);
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #8e7fe2;
+}
+
+.other-logins {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.button-logins {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  margin-bottom: 50px;
+}
+
+.button-container {
+  align-items: center;
+  width: 78px;
+  height: 44px;
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+}
+
+.button-container:not(:first-child) {
+  margin-left: 14px;
+}
