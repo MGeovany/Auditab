@@ -41,7 +41,7 @@ describe('Test for Header links', () => {
   })
 })
 
-describe('header widht', () => {
+describe('header width', () => {
   test('figure it out jeje', () => {
     render(<Header/>)
 
