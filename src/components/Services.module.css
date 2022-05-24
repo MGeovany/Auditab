@@ -1,0 +1,46 @@
+.card_Services{
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 12px 14px 41px #00000029;
+    opacity: 1;
+    width: 448px;
+    height: 607px;
+    margin-left: 2rem;
+}
+
+.SerTitle{
+    color: var(--unnamed-color-111217);
+    text-align: center;
+    font: normal normal 700px 32px/111px Black Han Sans;
+    color: #111217;
+    opacity: 1;
+    margin: 1rem 1rem;
+    height: 3rem;
+}
+
+.SerLongText{
+    color: var(--unnamed-color-9b9b9b);
+    font: normal normal normal 24px/46px Poppins;
+    letter-spacing: 0px;
+    color: #9B9B9B;
+    opacity: 1;
+    width: 400px;
+    margin-left: 1.5rem;
+}
+
+.SerPos{
+    position: relative;
+    top: 20px;
+}
+
+h7{
+    color: #7771DE;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+img{
+    width: 308px;
+    height: 217px;
+    margin: 60px 10px 10px 10px;
+}
