@@ -13,7 +13,7 @@
 .card_Image{
     width: 118px;
     height: 118px;
-    margin-top: 60px;
+    margin: 10px 10px 10px 10px;
 }
 
 .Title{
@@ -21,7 +21,8 @@
     color: #111217;
     font-size: 32px;
     margin-left: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 3px;
+    margin-top: 1px;
 }
 
 .longtext{
@@ -30,9 +31,10 @@
     font-size: 24px;
     width: 328px;
     margin-left: 70px;
+    margin-top: 5px;
 }
 
 .DivF{
     position: relative;
-    top: 120px;
+    top: 1px;
 }
