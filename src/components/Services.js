@@ -1,27 +1,12 @@
 import React from 'react'
-import css from "./Services.module.css"
+import "../styles/features-servicesStyle.css"
 
-export const Services = (prop) => {
+export const Services = () => {
 
 
   return (
     <>
-      <div className = {css.card_Services}>
-
-        <img src= {prop.Image}/>
-
-        <div className= {css.SerPos}>
-
-          <h4 className={css.SerTitle}>{prop.Title}</h4>
-
-          <p className={css.SerLongText}>{prop.LongText}</p>
-
-          <h7>Read More</h7>
-          
-        </div>
-        
-
-      </div>
+   
     </>
   )
 }

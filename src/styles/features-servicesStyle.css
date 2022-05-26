@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root {
+  display: flex;
+  justify-content: center;
+  margin-top: 166px;
+
+  /* Fonts: */
+  --poppins-regular: "Poppins", sans-serif;
+  --black-regular: "Black Han Sans", sans-serif;
+
+  /* Colors: */
+  --navy: #15274c;
+  --white: #ffffff;
+  --gray: #bfc5cf;
+  --gray-light: #d2d3d9;
+  --black: #111217;
+  --mate: #333333;
+  --purple-dark: #362e61;
+  --purple-light: #7260d9;
+  --purple-light2: #7771de;
+  --blue: #0065ff;
+}
+
+.title {
+  font-size: 22px;
+  color: var(--mate);
+  margin-bottom: 114px;
+  font-family: var(--black-regular);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  flex-direction: row;
+}
+
+.card {
+  width: 367px;
+  height: 320px;
+  border-radius: 56px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 12px 14px 41px #00000029;
+
+  flex-direction: column;
+}
+
+.card:not(:last-child) {
+  margin-right: 84px;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+}
+
+.card-title {
+  font-size: 22px;
+  color: var(--mate);
+  margin-bottom: 34px;
+  margin-top: 36px;
+  font-family: var(--black-regular);
+}
+
+.card-text {
+  width: 100%;
+  padding: 0 50px;
+
+  font-family: var(--poppins-regular);
+  font-size: 18px;
+  color: var(--gray);
+  text-align: center;
+}
