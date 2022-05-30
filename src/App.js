@@ -1,12 +1,16 @@
-import './App.css'
+import "./App.css";
 
-function App () {
+import { FeaturesCarrusell } from "./components/FeaturesCarrusell";
+import { ServicesCarrisell } from "./components/Services_Carrusell";
+
+function App() {
   // Empezar aqui, agregando sus componentes
   return (
     <div className="App">
-      Hola Mundo 👋
+      <FeaturesCarrusell />
+      <ServicesCarrisell />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
