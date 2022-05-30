@@ -37,6 +37,8 @@
 
 .card-container {
   flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .card {
@@ -54,24 +56,64 @@
 }
 
 img {
-  width: 80px;
-  height: 80px;
+  width: 100%;
+}
+
+span {
+  color: var(--purple-light2);
 }
 
 .card-title {
   font-size: 22px;
   color: var(--mate);
-  margin-bottom: 34px;
+  margin-bottom: 14px;
   margin-top: 36px;
   font-family: var(--black-regular);
 }
 
 .card-text {
   width: 100%;
-  padding: 0 50px;
+  padding: 0 18px;
 
   font-family: var(--poppins-regular);
   font-size: 18px;
   color: var(--gray);
   text-align: center;
+}
+
+.services-container {
+  flex-direction: column;
+  margin: 414px 0 400px;
+}
+
+.card-img {
+  padding: 80px 70px 30px;
+}
+
+.card-corner {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 12px 14px 41px #00000029;
+
+  width: 368px;
+  height: 607px;
+  flex-direction: column;
+}
+
+.card-image {
+  width: 308px;
+  height: 218px;
+}
+
+.card-content {
+  padding: 0 10px;
+  flex-direction: column;
+}
+
+.line {
+  line-height: 35px;
+}
+
+hr {
+  border: 1px solid #dcdce1;
+  width: 90%;
 }
