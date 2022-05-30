@@ -1,6 +1,5 @@
 import React from 'react'
-import "../styles/loginStyle.css";
-
+import '../styles/loginStyle.css'
 
 const Login = () => {
   return (
@@ -27,7 +26,7 @@ const Login = () => {
                 <label>Password</label>
               </div>
               <input type="password" className="password" id="password"></input>
-              <p><a href="#email-id">Forgot password?</a></p>                
+              <p><a href="#email-id">Forgot password?</a></p>
             </div>
 
             <button className="btn btn-primary">Login</button>

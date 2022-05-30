@@ -1,13 +1,12 @@
-import "./App.css";
+import './App.css'
 
-function App() {
-
+function App () {
   // Empezar aqui, agregando sus componentes
   return (
     <div className="App">
       Hola Mundo 👋
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

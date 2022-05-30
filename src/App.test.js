@@ -1,4 +1,4 @@
-/* eslint-disable testing-library/no-node-access */
+/* global expect test describe */
 
 import { render, screen } from '@testing-library/react'
 import App from './App'
