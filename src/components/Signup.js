@@ -1,39 +1,16 @@
 import React from "react";
 import "../styles/sessionStyle.css";
 
-const Login = () => {
+export const Signup = () => {
   return (
-    <div className="login">
-      <div className="card-container">
-        <div className="image-container">
-          <img src="/assets/people/Allura - In the Park.png" alt=""></img>
-        </div>
-        <div className="login-content">
-          <h1>Login</h1>
-          <form className="login-form">
-            <div className="field">
-              <div>
-                <AtComponent width={13} height={16} fill="#BFC5CF" />
-                <label>Email ID</label>
-              </div>
-              <input type="text" className="email-id" id="email-id"></input>
-            </div>
-
-            <div className="field">
-              <div>
-                <LockComponent width={15} height={20} fill="#BFC5CF" />
-                <label>Password</label>
-              </div>
-              <input type="password" className="password" id="password"></input>
-              <p>
-                <a href="#email-id">Forgot password?</a>
-              </p>
-            </div>
-
-            <button className="btn btn-primary">Login</button>
-          </form>
-          <div className="other-logins">
-            <p>Or, Login with...</p>
+    <div>
+      <div className="login">
+        <div className="card-container">
+          <div className="image-container">
+            <img src="/assets/people/Allura - Walking Around.png" alt=""></img>
+          </div>
+          <div className="login-content">
+            <h1>Sign Up</h1>
             <div className="button-logins">
               <div className="button-container">
                 <img
@@ -58,17 +35,50 @@ const Login = () => {
               </div>
             </div>
             <div className="register-text">
-              <p>
-                New on AUDITAB?<a href="/register">Register</a>
-              </p>
+              <p>Or, register with an email...</p>
             </div>
+            <form className="login-form">
+              <div className="field">
+                <div>
+                  <UserComponent width={14} height={16} fill="#BFC5CF" />
+                  <label>Username</label>
+                </div>
+                <input type="text" className="user-id" id="user-id"></input>
+              </div>
+
+              <div className="field">
+                <div>
+                  <AtComponent width={14} height={16} fill="#BFC5CF" />
+                  <label>Email ID</label>
+                </div>
+                <input type="text" className="email-id" id="email-id"></input>
+              </div>
+
+              <div className="field">
+                <div>
+                  <LockComponent width={15} height={20} fill="#BFC5CF" />
+                  <label>Password</label>
+                </div>
+                <input
+                  type="password"
+                  className="password"
+                  id="password"
+                ></input>
+              </div>
+              <div className="register-text">
+                <p>
+                  Already User?<a href="/login">Login</a>
+                </p>
+              </div>
+
+              <button className="btn btn-primary">Sign Up</button>
+            </form>
           </div>
         </div>
       </div>
     </div>
   );
 };
-
 const AtComponent = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -99,4 +109,16 @@ const LockComponent = (props) => (
   </svg>
 );
 
-export default Login;
+const UserComponent = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 459 459"
+    style={{
+      enableBackground: "new 0 0 459 459",
+    }}
+    xmlSpace="preserve"
+    {...props}
+  >
+    <path d="M229.5 0C102.53 0 0 102.845 0 229.5 0 356.301 102.719 459 229.5 459 356.851 459 459 355.815 459 229.5 459 102.547 356.079 0 229.5 0zm118.101 364.67C314.887 393.338 273.4 409 229.5 409c-43.892 0-85.372-15.657-118.083-44.314a16.37 16.37 0 0 1-5.245-15.597c11.3-55.195 46.457-98.725 91.209-113.047C174.028 222.218 158 193.817 158 161c0-46.392 32.012-84 71.5-84s71.5 37.608 71.5 84c0 32.812-16.023 61.209-39.369 75.035 44.751 14.319 79.909 57.848 91.213 113.038a16.39 16.39 0 0 1-5.243 15.597z" />
+  </svg>
+);
