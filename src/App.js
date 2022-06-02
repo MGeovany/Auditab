@@ -1,16 +1,29 @@
-import "./App.css";
+/* eslint-disable react/react-in-jsx-scope */
+import './App.css'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
-import { FeaturesCarrusell } from "./components/FeaturesCarrusell";
-import { ServicesCarrisell } from "./components/Services_Carrusell";
+import { LandingPage } from './components/LandingPage'
+import { Login } from './components/Login'
+import { Signup } from './components/Signup'
+import { Home } from './components/Home'
+import { HomeNavbar } from './components/HomeNavbar'
+import { Navbar } from './components/Navbar'
 
-function App() {
-  // Empezar aqui, agregando sus componentes
+function App () {
   return (
     <div className="App">
-      <FeaturesCarrusell />
-      <ServicesCarrisell />
+      <Router>
+        <Navbar/>
+        <Routes>
+          <Route exact path="/" element={<LandingPage />} />
+          <Route exact path="login" element={<Login />}></Route>
+          <Route exact path="signup" element={<Signup />}></Route>
+          <Route exact path="/home" element={<Home />} />
+          <Route exact path="/HomeNavbar" element={<HomeNavbar />} />
+        </Routes>
+      </Router>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

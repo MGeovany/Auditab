@@ -1,13 +1,11 @@
 import React from 'react'
-import "../styles/features-servicesStyle.css"
+import '../styles/features-servicesStyle.css'
 
 export const Services = () => {
-
-
   return (
-    <div className='services-container flex'>
+    <div className="services flex">
       <div className='title'> What is our <span>Services🏆</span></div>
-      <div className='card-container flex'>
+      <div className='card-container '>
         <div className='card-corner flex'>
           <div className='card-image'>
             <img src='/assets/people/Headhunter.png' alt='audit-icon'></img>
@@ -26,7 +24,7 @@ export const Services = () => {
             <img src='/assets/people/Advertise.png' alt='audit-icon'></img>
             </div>
             <div className='card-content flex'>
-              <div className='card-title'>Suppoort</div>
+              <div className='card-title'>Support</div>
               <p className='card-text line'>Chat rooms for online support, with no registration, you can start.</p>
               <hr></hr>
               <span>

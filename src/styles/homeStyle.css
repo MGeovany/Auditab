@@ -17,7 +17,7 @@
   --blue: #0065ff;
 }
 
-.card {
+.card-home {
   font-family: var(--poppins-regular);
 }
 
@@ -26,7 +26,7 @@
   background-color: var(--white-bg);
 
   margin-left: 40px;
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 h1 {
@@ -48,7 +48,7 @@ h4 {
   padding: 0 120px;
 }
 
-.card {
+.card-home {
   border-top: 5px solid var(--purple-light);
 
   background-color: var(--white-bg);
@@ -63,7 +63,7 @@ h4 {
   justify-content: space-between;
 }
 
-.card-text {
+.card-text-home {
   font-size: large;
   color: var(--purple-light);
 }

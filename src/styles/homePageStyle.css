@@ -1,0 +1,48 @@
+.home-page {
+  font-family: var(--black-han);
+
+  display: flex;
+
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+
+  margin: 100px 0 300px 80px;
+}
+
+.home-page-title {
+  font-size: 72px;
+  line-height: 100px;
+}
+
+.home-page-img > img {
+  width: 760px;
+}
+
+.home-page-msg {
+  margin-top: 30px;
+  width: 650px;
+  color: var(--gray);
+  font-family: var(--poppins-regular);
+  line-height: 40px;
+  font-size: 20px;
+}
+
+.home-page-btn {
+  margin-top: 30px;
+  width: 180px;
+  height: 60px;
+  background-color: var(--purple-light);
+  color: var(--white);
+  font-family: var(--black-han);
+  font-size: 22px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.home-page-btn:link,
+.home-page-btn:visited,
+.home-page-btn:active {
+  text-decoration: none;
+}

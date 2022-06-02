@@ -1,0 +1,64 @@
+.navbar {
+  background-color: #ffff;
+
+  height: 70px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  font-family: var(--black-han);
+  color: var(--mate);
+}
+
+.navbar-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar-logo {
+  padding: 35px;
+}
+
+.navbar-links {
+  padding-left: 170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 480px;
+
+  color: var(--mate);
+}
+
+.navbar-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 250px;
+  padding: 30px;
+  align-items: center;
+}
+
+.navbar-button-signup {
+  background-color: var(--purple-light);
+  border: none;
+  color: var(--white) !important;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.navbar-link:link,
+.navbar-link:visited,
+.navbar-link:active {
+  text-decoration: none;
+  color: inherit;
+}
