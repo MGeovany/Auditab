@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root {
+  /* Fonts: */
+  --poppins-regular: "Poppins", sans-serif;
+
+  /* Colors: */
+  --navy: #15274c;
+  --white-bg: #f8f9fb;
+  --gray: #bfc5cf;
+  --gray-light: #d2d3d9;
+  --black: #111217;
+  --mate: #333333;
+  --purple-dark: #362e61;
+  --purple-light: #7260d9;
+  --purple-light2: #7771de;
+  --blue: #0065ff;
+}
+
+.card-home {
+  font-family: var(--poppins-regular);
+}
+
+.home {
+  font-family: var(--poppins-regular);
+  background-color: var(--white-bg);
+
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
+h1 {
+  color: var(--purple-light);
+}
+
+h4 {
+  color: var(--gray);
+  font-size: large;
+}
+
+.dashboard-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+
+  padding: 0 120px;
+}
+
+.card-home {
+  border-top: 5px solid var(--purple-light);
+
+  background-color: var(--white-bg);
+  border-radius: 0 0 7px 7px;
+  padding: 30px;
+  margin: 10px;
+  width: 300px;
+  height: 230px;
+  box-shadow: 0px 1px 36px #00000029;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-text-home {
+  font-size: large;
+  color: var(--purple-light);
+}
+
+.card-number {
+  font-size: 60px;
+  color: var(--mate);
+}
+
+.table-container {
+  padding: 60px 205px;
+}
