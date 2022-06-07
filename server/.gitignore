@@ -7,7 +7,7 @@
 
 # testing
 /coverage
-.eslintrc.json
+.eslintrc.js
 
 # production
 /build
