@@ -1,12 +1,12 @@
-import React from "react";
-import "../styles/features-servicesStyle.css";
+/* eslint-disable react/react-in-jsx-scope */
 
+import '../styles/features-servicesStyle.css'
 
 export const Features = () => {
   return (
-    <>
+    <div className='features flex'>
       <div className="title flex">Our Features 🎁</div>
-      <div className="card-container flex">
+      <div className="card-container">
         <div className="card flex">
           <div className="img">
             <img
@@ -44,6 +44,6 @@ export const Features = () => {
           </div>
         </div>
       </div>
-    </>
-  );
-};
+    </div>
+  )
+}

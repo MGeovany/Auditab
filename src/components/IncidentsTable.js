@@ -7,8 +7,6 @@ import TableHead from '@mui/material/TableHead'
 import TableRow from '@mui/material/TableRow'
 import Paper from '@mui/material/Paper'
 
-// import { createMUITheme, ThemeProvider } from '@material-ui/core/styles'
-
 function createData (id, process, date, req, type, desc) {
   return { id, process, date, req, type, desc }
 }
@@ -18,20 +16,10 @@ const rows = [
   createData('ID05029', 'Gestion de la calidad', '2022-5-5', 'ISO 8001', 'Incident', 'Se evidencia que los registros de las acciones correctivas 2'),
   createData('ID1909', 'Gestion de la calidad', '2023-4-8', 'ISO 801', 'Observation', 'Se evidencia que los registros de las acciones correctivas 23 y 26 estan documentadas, a pesar de que en la retencion documental se especifica que se deben registrar en el software.')
 ]
-/*
-const theme = createMUITheme({
-  typography: {
-    fontFamily: [
-      'Poppins',
-      'sans-serif'
-    ].join(',')
-  }
-})
-*/
+
 export default function IncidentsTable () {
   return (
 
-  //  <ThemeProvider theme={theme}>
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="caption table">
         <caption align='right'>See More...</caption>
@@ -61,7 +49,5 @@ export default function IncidentsTable () {
         </TableBody>
       </Table>
     </TableContainer>
-  //  </ThemeProvider>
-
   )
 }
