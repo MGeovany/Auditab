@@ -1,13 +1,12 @@
 import React from 'react'
 import '../styles/homeStyle.css'
-
-import IncidentsTable from './IncidentsTable'
-
+import IncidentsTable from '../components/IncidentsTable'
 import { ReportSvg, CheckSvg, FindsSvg, BusinessSvg } from '../utils/svgIcons'
 
 export const Home = () => {
   return (
-    <div>
+    <div className='flex home'>
+
       <div className='home'>
         <h1>Dashboard</h1>
         <h4>Welcome back <span>Jhon Doe</span></h4>

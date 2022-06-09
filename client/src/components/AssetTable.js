@@ -1,10 +1,10 @@
 import * as React from 'react'
-import { Table, MantineProvider } from '@mantine/core'
+import { Table } from '@mantine/core'
 /* import PropTypes from 'prop-types' */
 
 const elements = [
   {
-    id: 'ID4504',
+    id: 'ID4433504',
     process: 'Gestion de la calidad',
     date: '2021-2-5',
     req: 'ISO 9001',
@@ -12,7 +12,7 @@ const elements = [
     desc: 'Se evidencia que los registros de las acciones correctivas 23 y 26 estan documentadas, a pesar de que en la retencion documental se especifica que se deben registrar en el software.'
   },
   {
-    id: 'ID4504',
+    id: 'ID43504',
     process: 'Gestion de la calidad',
     date: '2021-2-5',
     req: 'ISO 9001',
@@ -20,7 +20,7 @@ const elements = [
     desc: 'Se evidencia que los registros de las acciones correctivas 23 y 26 estan documentadas, a pesar de que en la retencion documental se especifica que se deben registrar en el software.'
   },
   {
-    id: 'ID4504',
+    id: 'ID443504',
     process: 'Gestion de la calidad',
     date: '2021-2-5',
     req: 'ISO 9001',
@@ -28,7 +28,7 @@ const elements = [
     desc: 'Se evidencia que los registros de las acciones correctivas 23 y 26 estan documentadas, a pesar de que en la retencion documental se especifica que se deben registrar en el software.'
   },
   {
-    id: 'ID4504',
+    id: 'ID451104',
     process: 'Gestion de la calidad',
     date: '2021-2-5',
     req: 'ISO 9001',
@@ -36,7 +36,7 @@ const elements = [
     desc: 'Se evidencia que los registros de las acciones correctivas 23 y 26 estan documentadas, a pesar de que en la retencion documental se especifica que se deben registrar en el software.'
   },
   {
-    id: 'ID4504',
+    id: 'ID4553104',
     process: 'Gestion de la calidad',
     date: '2021-2-5',
     req: 'ISO 9001',
@@ -46,7 +46,7 @@ const elements = [
 
 ]
 
-export default function IncidentsTable () {
+export function AssetTable () {
   const rows = elements.map((element) => (
     <tr key={element.id}>
       <td>{element.id}</td>
@@ -60,10 +60,7 @@ export default function IncidentsTable () {
 
   return (
     <div className="table-container-c">
-      <MantineProvider
-        theme={{ fontFamily: 'Poppins, sans-serif' }}
-        withGlobalStyles
-      >
+
         <Table>
         <thead>
           <tr>
@@ -77,7 +74,6 @@ export default function IncidentsTable () {
         </thead>
         <tbody>{rows}</tbody>
       </Table>
-    </MantineProvider>
 
     </div>
   )

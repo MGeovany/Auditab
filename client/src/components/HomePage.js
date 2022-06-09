@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
 import '../styles/homePageStyle.css'
 
@@ -12,7 +13,7 @@ export const HomePage = () => {
           <div className="home-page-msg">
           Verify the status of your management system through audits and perform inspections to validate the safety of your products, services and facilities.
           </div>
-          <Link to="/home" className="home-page-btn flex">Get Started</Link>
+          <Link to="/home" className="home-page-btn flex" >Get Started</Link>
         </div>
         <div className="home-page-img">
           <img src="/assets/people/Moneyverse - Crypto Galaxy.png" alt="logo" />

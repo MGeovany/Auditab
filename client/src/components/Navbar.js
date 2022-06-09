@@ -11,8 +11,8 @@ export const Navbar = () => {
           <div className='navbar-logo'>AUDITAB</div>
           <div className='navbar-links'>
             <Link to='/' className='navbar-link'>Home</Link>
-            <Link to='/' className='navbar-link'>About</Link>
-            <Link to='/' className='navbar-link'>Team</Link>
+            <Link to='/asset' className='navbar-link'>About</Link>
+            <Link to='/incident' className='navbar-link'>Team</Link>
           </div>
         </div>
         <div className='navbar-buttons'>

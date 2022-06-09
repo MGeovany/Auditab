@@ -2,27 +2,40 @@
 import './App.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
+import { MantineProvider } from '@mantine/core'
+import { ModalsProvider } from '@mantine/modals'
+
+import { useState } from 'react'
 import { LandingPage } from './components/LandingPage'
 import { Login } from './components/Login'
 import { Signup } from './components/Signup'
-import { Home } from './components/Home'
-import { HomeNavbar } from './components/HomeNavbar'
+import { Home } from './pages/Home'
 import { Navbar } from './components/Navbar'
+import { Asset } from './pages/Asset'
+
+import { addAssetModal } from './components/addAssetModal'
 
 function App () {
+  // eslint-disable-next-line no-unused-vars
+  const [logged, setLogged] = useState(true)
+
   return (
-    <div className="App">
-      <Router>
-        <Navbar/>
-        <Routes>
-          <Route exact path="/" element={<LandingPage />} />
-          <Route exact path="login" element={<Login />}></Route>
-          <Route exact path="signup" element={<Signup />}></Route>
-          <Route exact path="/home" element={<Home />} />
-          <Route exact path="/HomeNavbar" element={<HomeNavbar />} />
-        </Routes>
-      </Router>
-    </div>
+    <MantineProvider>
+      <ModalsProvider modals={{ addAssets: addAssetModal }}>
+        <div className="App">
+          <Router>
+            {logged ? <Navbar /> : null}
+            <Routes>
+              <Route exact path="/" element={<LandingPage />} />
+              <Route exact path="login" element={<Login />} />
+              <Route exact path="signup" element={<Signup />} />
+              <Route exact path="/home" element={<Home />} />
+              <Route exact path="/asset" element={<Asset />} />
+            </Routes>
+          </Router>
+        </div>
+      </ModalsProvider>
+    </MantineProvider>
   )
 }
 
