@@ -1,0 +1,68 @@
+.Element_Style{
+    display: flex;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 1200px;
+    height: 80px;
+    margin: 0rem 1rem 1rem 1rem;
+    background-color: var(--gray-light);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.List_Style{
+    border: 2px solid rgb(240, 234, 234);
+    border-radius: 10px;
+    width: 1240px;
+    margin: 1rem 1rem 1rem 1rem;
+    background-color: var(--gray);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Texto{
+    width: 500px;
+    text-align: justify;
+    margin-left: 105px;
+    font-style: normal;
+    font-size: large;
+    color: var(--navy);
+}
+
+.Texto2{
+    width: 700px;
+    color:#7260d9;
+    font-size: xx-large;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+}
+
+.boxes{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 25px;
+}
+
+.buttonX{
+    width: 250px;
+    height: 60px;
+    margin: 2rem 1rem 1rem 1rem;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: rgb(255, 255, 255);
+    font-size: large;
+    color : blue;
+}
+
+.lista_auditable_areatexto{
+    margin-left: 30px;
+    margin-top: 1rem;
+    width: 500px;
+    height: 50px;
+    font-size: large;
+}
+
+.PosF{
+    margin-left: 4%;
+}
