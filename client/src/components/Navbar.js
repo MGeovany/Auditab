@@ -8,16 +8,30 @@ export const Navbar = () => {
     <div>
       <div className='navbar'>
         <div className='navbar-title'>
-          <div className='navbar-logo'>AUDITAB</div>
+          <div className='navbar-logo'>
+            <Link to='/' className='navbar-link'>
+              AUDITAB
+            </Link>
+          </div>
           <div className='navbar-links'>
-            <Link to='/' className='navbar-link'>Home</Link>
-            <Link to='/asset' className='navbar-link'>About</Link>
-            <Link to='/incident' className='navbar-link'>Team</Link>
+            <Link to='/home' className='navbar-link'>
+              Home
+            </Link>
+            <Link to='/asset' className='navbar-link'>
+              Asset Management
+            </Link>
+            <Link to='/summary' className='navbar-link'>
+              Summary
+            </Link>
           </div>
         </div>
         <div className='navbar-buttons'>
-        <Link to='/login' className='navbar-link navbar-button-login'>Login</Link>
-        <Link to='/signup' className='navbar-link navbar-button-signup'>Sign Up</Link>
+          <Link to='/login' className='navbar-link navbar-button-login'>
+            Login
+          </Link>
+          <Link to='/signup' className='navbar-link navbar-button-signup'>
+            Sign Up
+          </Link>
         </div>
       </div>
     </div>

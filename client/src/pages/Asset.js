@@ -38,21 +38,23 @@ export const Asset = () => {
         theme={{ fontFamily: 'Poppins, sans-serif' }}
         withGlobalStyles
       >
-        <div className="asset">
-          <div className="asset__header">
-            <div className="asset__page">Asset management</div>
-            <div className="asset__title">
+        <div className='asset'>
+          <div className='asset__header'>
+            <div className='asset__page'>Asset management</div>
+            <div className='asset__title'>
               ADD THE ASSETS FOR YOUR{' '}
               <span style={{ color: '#7771de' }}>COMPANY</span>
             </div>
           </div>
 
-          <div className="asset__body">
-            <div className="asset__body__title">ASSETS OF THE COMPANY</div>
-            <div className="asset__body__content">
-              <div className="asset__body__controls">
-                <div className="asset__control">
-                  <Select searchable clearable
+          <div className='asset__body'>
+            <div className='asset__body__title'>ASSETS OF THE COMPANY</div>
+            <div className='asset__body__content'>
+              <div className='asset__body__controls'>
+                <div className='asset__control'>
+                  <Select
+                    searchable
+                    clearable
                     data={[
                       'Software',
                       'Hardware',
@@ -64,38 +66,42 @@ export const Asset = () => {
                       'Maintenance and backup',
                       'Supplies or general'
                     ]}
-                    placeholder="Select"
-                    label="Select the Asset"
+                    placeholder='Select'
+                    label='Select the Asset'
                   />
                 </div>
-                <div className="asset__control">
-                  <InputWrapper id="input-demo" label="Search by ID">
-                    <Input id="input-demo" placeholder="Search" />
+                <div className='asset__control'>
+                  <InputWrapper id='input-demo' label='Search by ID'>
+                    <Input id='input-demo' placeholder='Search' />
                   </InputWrapper>
                 </div>
-                <div className="asset__control">
-                  <Button color="violet">Search</Button>
+                <div className='asset__control'>
+                  <Button color='violet'>Search</Button>
                 </div>
               </div>
-              <div className="asset__body__table">
+              <div className='asset__body__table'>
                 <AssetTable />
-                <div className="asset__btns">
-                <div className="asset__control">
+                <div className='asset__btns'>
+                  <div className='asset__control'>
+                    <Button
+                      color='violet'
+                      size='md'
+                      radius='md'
+                      onClick={openContextModal}
+                    >
+                      Add Asset
+                    </Button>
+                  </div>
                   <Button
-                    color="violet"
-                    size="md"
-                    radius="md"
-                    onClick={openContextModal}
+                    color='violet'
+                    variant='outline'
+                    size='md'
+                    radius='md'
                   >
-                    Add Asset
+                    Discard
                   </Button>
                 </div>
-                <Button color="violet" variant="outline" size="md" radius="md">
-                  Discard
-                </Button>
               </div>
-              </div>
-
             </div>
           </div>
         </div>

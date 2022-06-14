@@ -43,11 +43,10 @@ const elements = [
     type: 'Observation',
     desc: 'Se evidencia que los registros de las acciones correctivas 23 y 26 estan documentadas, a pesar de que en la retencion documental se especifica que se deben registrar en el software.'
   }
-
 ]
 
-export default function IncidentsTable () {
-  const rows = elements.map((element) => (
+export default function IncidentsTable() {
+  const rows = elements.map(element => (
     <tr key={element.id}>
       <td>{element.id}</td>
       <td>{element.process}</td>
@@ -59,26 +58,25 @@ export default function IncidentsTable () {
   ))
 
   return (
-    <div className="table-container-c">
+    <div className='table-container-c'>
       <MantineProvider
         theme={{ fontFamily: 'Poppins, sans-serif' }}
         withGlobalStyles
       >
         <Table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Process</th>
-            <th>Date</th>
-            <th>Requirement</th>
-            <th>Type</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>{rows}</tbody>
-      </Table>
-    </MantineProvider>
-
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Process</th>
+              <th>Date</th>
+              <th>Requirement</th>
+              <th>Type</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>{rows}</tbody>
+        </Table>
+      </MantineProvider>
     </div>
   )
 }

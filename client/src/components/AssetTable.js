@@ -43,11 +43,10 @@ const elements = [
     type: 'Observation',
     desc: 'Se evidencia que los registros de las acciones correctivas 23 y 26 estan documentadas, a pesar de que en la retencion documental se especifica que se deben registrar en el software.'
   }
-
 ]
 
 export function AssetTable () {
-  const rows = elements.map((element) => (
+  const rows = elements.map(element => (
     <tr key={element.id}>
       <td>{element.id}</td>
       <td>{element.process}</td>
@@ -59,9 +58,8 @@ export function AssetTable () {
   ))
 
   return (
-    <div className="table-container-c">
-
-        <Table>
+    <div className='table-container-c'>
+      <Table>
         <thead>
           <tr>
             <th>ID</th>
@@ -74,7 +72,6 @@ export function AssetTable () {
         </thead>
         <tbody>{rows}</tbody>
       </Table>
-
     </div>
   )
 }

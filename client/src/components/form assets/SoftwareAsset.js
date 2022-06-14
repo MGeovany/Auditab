@@ -13,10 +13,10 @@ export const SoftwareAsset = () => {
   console.log('valor', valuep)
   return (
     <div>
-      <div className="asset__control">
+      <div className='asset__control'>
         <NativeSelect
           value={valuep}
-          onChange={(event) => setValue(event.currentTarget.value)}
+          onChange={event => setValue(event.currentTarget.value)}
           data={[
             'Software',
             'Hardware',
@@ -28,11 +28,11 @@ export const SoftwareAsset = () => {
             'Maintenance and backup',
             'Supplies or general'
           ]}
-          placeholder="Select"
-          label="Select the Asset"
+          placeholder='Select'
+          label='Select the Asset'
         />
       </div>
-      <div className="asset__page">
+      <div className='asset__page'>
         Add a New <span style={{ color: '#7771DE' }}>{valuep}</span>
       </div>
     </div>
