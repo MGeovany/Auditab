@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
-import { SoftwareAsset } from './form assets/SoftwareAsset'
+import { SoftwareAsset } from '../components/form assets/SoftwareAssetModal'
 
 export const addAssetModal = ({ context, id, innerProps }) => (
   <>

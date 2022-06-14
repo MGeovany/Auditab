@@ -1,13 +1,16 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose')
 
 const furnitureequipmentSchema = mongoose.Schema(
   {
     serialNumber: { type: String, require: true },
-    description: { type: String, require: true },
+    description: { type: String, require: true }
   },
   {
-    collection: "FurnitureAndEquipment",
+    collection: 'FurnitureAndEquipment'
   }
-);
+)
 
-module.exports = mongoose.model("FurnitureAndEquipment", furnitureequipmentSchema);
+module.exports = mongoose.model(
+  'FurnitureAndEquipment',
+  furnitureequipmentSchema
+)

@@ -1,13 +1,13 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose')
 
 const jobPositionSchema = mongoose.Schema(
   {
     description: { type: String, require: true },
-    accessLevel: { type: String, require: true },
+    accessLevel: { type: String, require: true }
   },
   {
-    collection: "JobPosition",
+    collection: 'JobPosition'
   }
-);
+)
 
-module.exports = mongoose.model("JobPosition", jobPositionSchema);
+module.exports = mongoose.model('JobPosition', jobPositionSchema)

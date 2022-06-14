@@ -1,13 +1,13 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose')
 
 const databaseSchema = mongoose.Schema(
   {
     datebackedup: { type: Date, require: true },
-    description: { type: String, require: true },
+    description: { type: String, require: true }
   },
   {
-    collection: "DataBase",
+    collection: 'DataBase'
   }
-);
+)
 
-module.exports = mongoose.model("DataBase", databaseSchema);
+module.exports = mongoose.model('DataBase', databaseSchema)

@@ -1,15 +1,15 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose')
 
 const softwareSchema = mongoose.Schema(
   {
     description: { type: String, require: true },
-    dateAdded:{type:String,require: true},
-    dateExpration:{type:Date, require:true},
-    price: { type: Number, require: true },
+    dateAdded: { type: String, require: true },
+    dateExpiration: { type: String, require: true },
+    price: { type: Number, require: true }
   },
   {
-    collection: "Software",
+    collection: 'Software'
   }
-);
+)
 
-module.exports = mongoose.model("Software", softwareSchema);
+module.exports = mongoose.model('Software', softwareSchema)

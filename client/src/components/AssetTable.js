@@ -1,59 +1,45 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable space-before-function-paren */
 import * as React from 'react'
 import { Table } from '@mantine/core'
 /* import PropTypes from 'prop-types' */
 
-const elements = [
+import { useState, useEffect } from 'react'
+import axios from 'axios'
+
+const elements1 = [
   {
     id: 'ID4433504',
-    process: 'Gestion de la calidad',
-    date: '2021-2-5',
-    req: 'ISO 9001',
-    type: 'Observation',
-    desc: 'Se evidencia que los registros de las acciones correctivas 23 y 26 estan documentadas, a pesar de que en la retencion documental se especifica que se deben registrar en el software.'
-  },
-  {
-    id: 'ID43504',
-    process: 'Gestion de la calidad',
-    date: '2021-2-5',
-    req: 'ISO 9001',
-    type: 'Observation',
-    desc: 'Se evidencia que los registros de las acciones correctivas 23 y 26 estan documentadas, a pesar de que en la retencion documental se especifica que se deben registrar en el software.'
-  },
-  {
-    id: 'ID443504',
-    process: 'Gestion de la calidad',
-    date: '2021-2-5',
-    req: 'ISO 9001',
-    type: 'Observation',
-    desc: 'Se evidencia que los registros de las acciones correctivas 23 y 26 estan documentadas, a pesar de que en la retencion documental se especifica que se deben registrar en el software.'
-  },
-  {
-    id: 'ID451104',
-    process: 'Gestion de la calidad',
-    date: '2021-2-5',
-    req: 'ISO 9001',
-    type: 'Observation',
-    desc: 'Se evidencia que los registros de las acciones correctivas 23 y 26 estan documentadas, a pesar de que en la retencion documental se especifica que se deben registrar en el software.'
-  },
-  {
-    id: 'ID4553104',
-    process: 'Gestion de la calidad',
-    date: '2021-2-5',
-    req: 'ISO 9001',
-    type: 'Observation',
-    desc: 'Se evidencia que los registros de las acciones correctivas 23 y 26 estan documentadas, a pesar de que en la retencion documental se especifica que se deben registrar en el software.'
+    description: 'Laptop Computer with Windows 10',
+    dateAdded: '2021-2-5',
+    dateExpration: '2022-2-5',
+    price: 12.95
   }
 ]
 
-export function AssetTable () {
+export function AssetTable() {
+  const [elements, setElements] = useState(elements1)
+
+  const getSoftware = async () => {
+    try {
+      const response = await axios.get('http://localhost:5000/auditab/software')
+      setElements(response.data)
+      console.log(response)
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+  useEffect(() => {
+    getSoftware()
+  }, [])
   const rows = elements.map(element => (
-    <tr key={element.id}>
-      <td>{element.id}</td>
-      <td>{element.process}</td>
-      <td>{element.date}</td>
-      <td>{element.req}</td>
-      <td>{element.type}</td>
-      <td>{element.desc}</td>
+    <tr key={element._id}>
+      <td>{element._id}</td>
+      <td>{element.description}</td>
+      <td>{element.dateAdded}</td>
+      <td>{element.dateExpiration}</td>
+      <td>{element.price} $</td>
     </tr>
   ))
 
@@ -63,11 +49,10 @@ export function AssetTable () {
         <thead>
           <tr>
             <th>ID</th>
-            <th>Process</th>
-            <th>Date</th>
-            <th>Requirement</th>
-            <th>Type</th>
             <th>Description</th>
+            <th>Date Added</th>
+            <th>Date Expiration</th>
+            <th>Price</th>
           </tr>
         </thead>
         <tbody>{rows}</tbody>
