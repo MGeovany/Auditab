@@ -1,68 +1,94 @@
-.Element_Style{
+.element_style_card{
     display: flex;
     border: 2px solid white;
     border-radius: 5px;
-    width: 1200px;
+    width: 1600px;
     height: 80px;
-    margin: 0rem 1rem 1rem 1rem;
-    background-color: var(--gray-light);
+    margin: 1rem 1rem 3rem 50px;
+    background-color: #f8f9fb;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.List_Style{
+.list_style_card{
     border: 2px solid rgb(240, 234, 234);
     border-radius: 10px;
-    width: 1240px;
+    width: 1700px;
     margin: 1rem 1rem 1rem 1rem;
-    background-color: var(--gray);
+    background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.Texto{
-    width: 500px;
+.auditable_element_question{
+    width: 650px;
     text-align: justify;
-    margin-left: 105px;
-    font-style: normal;
+    margin-left: 60px;
+    font-family: "Poppins", sans-serif;
     font-size: large;
     color: var(--navy);
+    margin-top: 7px;
 }
 
-.Texto2{
+.auditable_list_title{
     width: 700px;
-    color:#7260d9;
-    font-size: xx-large;
+    color: #7771de;
+    font-size: 1.5cm;
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: auto;
+    margin-left: 5rem;
 }
 
-.boxes{
+.auditable_element_box{
     height: 25px;
     width: 25px;
-    position: absolute;
-    margin-left: 40px;
-    margin-top: 25px;
+    margin: 25px 0px 0px 15px;
 }
 
-.buttonX{
+.auditable_element_button1{
     width: 250px;
     height: 60px;
-    margin: 2rem 1rem 1rem 1rem;
-    border-radius: 10px;
-    border: 2px solid white;
-    background-color: rgb(255, 255, 255);
-    font-size: large;
-    color : blue;
+    margin: 2rem 1rem 1rem 3%;
+    border-radius: 5px;
+    background-color: #bfc5cf;
+    color : #f8f9fb;
+    border-color: #bfc5cf;
+    font-size: x-large;
+    font-weight: 700;
+    font-family: "Black Han Sans", sans-serif;
 }
 
-.lista_auditable_areatexto{
-    margin-left: 30px;
-    margin-top: 1rem;
-    width: 500px;
-    height: 50px;
-    font-size: large;
+.auditable_element_button2{
+    width: 250px;
+    height: 60px;
+    margin: 2rem 0rem 1rem 65%;
+    border-radius: 5px;
+    color : white;
+    border-color: #0065ff;
+    background-color: #0065ff;
+    font-size: x-large;
+    font-weight: 700;
+    font-family: "Black Han Sans", sans-serif;
 }
 
-.PosF{
-    margin-left: 4%;
+.auditable_element_areatext{
+    margin-left: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 600px;
+    height: 60px;
+    font-size: large;
+    border-radius: 5px;
+    border-color: #bfc5cf50;
+    border-width: 3px;
+    color: var(--mate);
+    background-color: #f8f9fb;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
 }
+
+.audittable_list_YN{
+    font-family: "Poppins", sans-serif;
+    margin: 25px 0px 0px 30px;
+    color: #111217;
+}
+

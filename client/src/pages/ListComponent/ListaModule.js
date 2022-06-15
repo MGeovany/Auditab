@@ -4,29 +4,17 @@ import "../ListComponent/ElementModule.css";
 
 export const Lista_module =()=>{
 
-    const texto_largo = "Lea atentamente las preguntas y responda en funcion de los reglamentes correspondientes. Es importante que una vez terminada la encuesta los usuarios sin acceso de administrador no podran agragar o cambiar los datos que se hara en esta encuesta."
-    
     let Lista_Preguntas = [
-        {pregunta : "¿Era seguro el método o procedimiento utilizado?",
-         comentario : ""},
-        {pregunta : "¿Fueron utilizados los equipos y las herramientas, en caso de que los empleados si contasen con ellas?",
-         comentario : ""},
-        {pregunta : "¿La máquina o el aparato utilizados están diseñados de forma adecuada?",
-         comentario : ""},
-        {pregunta : "¿Ha seguido el trabajador procedimientos operativos debidos?",
-         comentario : ""},
-        {pregunta : "¿Se realizó el trabajo bajo la supervisión adecuada?",
-         comentario : ""},
-        {pregunta : "¿Se ha realizado el mantenimiento del equipo regularmente?",
-         comentario : ""},
-         {pregunta : "¿Las condiciones o preocupaciones han sido reportadas de forma oportuna?",
-         comentario : ""},
-        {pregunta : "¿Fueron utilizados los equipos y las herramientas, en caso de que los empleados si contasen con ellas?",
-         comentario : ""},
-        {pregunta : "¿Estaban claramente identificados los productos empleados?",
-         comentario : ""},
-        {pregunta : "¿El problema se puede atribuir a falta de higiene o negligencia en la limpieza?",
-         comentario : ""}
+        {pregunta : "¿En los momentos anteriores del incidente se estaban realizando las operaciones de la manera que lo describe el reglamento?"},
+        {pregunta : "¿Tiene el reglamento del area, protocolos para evitar este tipo de incidentes?"},
+        {pregunta : "¿El personal actuo en funcion de lo acontecido?"},
+        {pregunta : "¿El equipo se encontraba en buen funcionamiento (mantenimientos, ajustes, reparaciones)?"},
+        {pregunta : "¿Todo el personal ha estado haciendo los procedimientos rutinarios en cada uno de sus repectivos lugares de trabajo?"},
+        {pregunta : "¿Se han realizado los mantimientos a los servidores y terminales correspondientes?"},
+        {pregunta : "¿Todos los equipos se encontraban actualizados correctamente (antivirus, malwares, etc.)?"},
+        {pregunta : "¿Se ha reportado anomalias en los sistemas las anteriores semanas? (approx. 1 - 2 Semanas)"},
+        {pregunta : "¿Se han estado documentando los cambios a los servidores y terminales?"},
+        {pregunta : "¿Se han realizado cambios de ciertas funciones por parte del personal o los encargados directos de los servicios?"}
     ];
 
         let Mostrar = Lista_Preguntas.map(function(value){
@@ -38,19 +26,20 @@ export const Lista_module =()=>{
     
     return(
         <>
-        <div className={"List_Style"}>
-            <h1 className={"Texto2"}>AUDITABLE</h1>
+        <div className="list_style_card">
+            <h1 className="auditable_list_title">CREAR INFORME</h1>
 
-            <h4 style={{margin: "10px 4% 10px 4%", color : "black"}}>{texto_largo}</h4>
-
-            <p className="PosF">Si/no</p>
-
-            <div>{Mostrar}</div>
-
-            <div style={{display : "flex"}}>
-                <button className="buttonX">Cargar Formulario</button>
-                <button className="buttonX">Cancelar</button>
+            <div style={{backgroundColor : "#bfc5cf44"}}>
+                <br/>
+                <div>{Mostrar}</div>
+                <br/>
             </div>
+
+            <div className="list_button_posistions">
+                    <button className="auditable_element_button2">AUDITAR</button>
+                    <button className="auditable_element_button1">CANCELAR</button>
+            </div>
+            
         </div>
         </>
     )

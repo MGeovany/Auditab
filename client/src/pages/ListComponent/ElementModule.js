@@ -3,19 +3,24 @@ import "./ElementModule.css"
 
 
 export const Elemento = (props) =>{
-
+    let holder = "  COMENTARIOS ADICIONALES"
     return(
         <>
-        <div className={"Element_Style"}>
+        <div className="element_style_card">
 
-            <input type={"checkbox"} className={"boxes"}></input>
+            <div style={{display : "flex"}}>
 
-            <p className={"Texto"}>{props.pregunta}</p>
+                <p className="audittable_list_YN">SI</p>
+                <input type={"checkbox"} className="auditable_element_box"/>
 
-            <p>{props.comentario}</p>
+                <p className="audittable_list_YN">NO</p>
+                <input type={"checkbox"} className="auditable_element_box"/>
+            </div>
+        
+            <p className="auditable_element_question">{props.pregunta}</p>
 
             <div>
-                <textarea className={"lista_auditable_areatexto"}>ingrese</textarea>
+                <textarea className="auditable_element_areatext" placeholder={holder}></textarea>
             </div>
             
             
