@@ -14,6 +14,7 @@ const jobRoute = require('./Routes/jobpositionRoute')
 const maintenaceRoute = require('./Routes/maintenacebackupRoute')
 const projectRoute = require('./Routes/projectRoute')
 const softwareRoute = require('./Routes/softwareRoute')
+const userRoute = require('./Routes/usersRoute')
 
 PORT = process.env.PORT || 5000
 app.use(cors())
@@ -38,7 +39,8 @@ app.use(
   jobRoute,
   maintenaceRoute,
   projectRoute,
-  softwareRoute
+  softwareRoute,
+  userRoute
 )
 
 app.get('/', function (req, res) {
