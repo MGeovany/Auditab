@@ -37,6 +37,16 @@
     margin-bottom: 20px;
     margin-left: 5rem;
 }
+.auditable_list_title2{
+    width: 700px;
+    color: #111217;
+    font-size: 1.5cm;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5rem;
+}
 
 .auditable_element_box{
     height: 25px;
@@ -92,3 +102,64 @@
     color: #111217;
 }
 
+.auditpage_title1{
+    width: auto;
+    color: #7771de;
+    font-size: 1.5cm;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin : 20px 0rem 20px 0rem;
+}
+
+.auditpage_title2{
+    width: 700px;
+    color: #111217;
+    font-size: 1.5cm;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 1rem;
+}
+
+.auditpage_p{
+    /* Layout Properties */
+    top: 130px;
+    left: 55px;
+    margin-bottom: 1cm;
+    width: 93px;
+    height: 27px;
+    /* UI Properties */
+    color: var(--unnamed-color-d2d3d9);
+    text-align: left;
+    font: normal normal normal 19px/128px Poppins;
+    letter-spacing: 0px;
+    color: #D2D3D9;
+    opacity: 1;
+}
+
+.auditpage_card{
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #f8f9fb;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 500px;
+    height: 450px;
+    margin: 130px 0px 120px 200px;
+}
+
+.auditpage_card_title1{
+    color: #7260d9;
+    font: italic normal 600 23px/128px Poppins;
+}
+
+.auditpage_card_title2{
+    color: #333333;
+    font: italic normal 600 23px/128px Poppins;
+    margin-left: 1rem;
+}
+
+.aditpage_card_bttn{
+    color: #D2D3D9;
+    font: normal normal normal 23px/128px Poppins;
+}
