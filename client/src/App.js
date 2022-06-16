@@ -21,7 +21,7 @@ function App() {
   const [logged, setLogged] = useState(true)
 
   return (
-    <ModalsProvider modals={{ addAssetModal }}>
+    <>
       <div className='App'>
         <Router>
           {logged ? <Navbar /> : null}
@@ -36,7 +36,7 @@ function App() {
           </Routes>
         </Router>
       </div>
-    </ModalsProvider>
+    </>
   )
 }
 

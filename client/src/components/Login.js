@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { authActions } from '../store/auth'
 
@@ -17,12 +18,15 @@ export const Login = () => {
   const handleSubmit = async event => {
     event.preventDefault()
     const qs = require('qs')
+
     const data = { user, password }
     try {
       const res = await axios.post(
-        'http://localhost:3000/api/autenticar',
+        'http://localhost:5000/auditab/users/auth',
         qs.stringify(data)
       )
+      console.log('data', res)
+      console.log(res)
       if (res.status === 200) {
         dispatch(authActions.login({ username: user, access: res.data.tipo }))
         navigate('/home', { replace: true })
@@ -41,7 +45,7 @@ export const Login = () => {
         </div>
         <div className='login-content'>
           <h1>Login</h1>
-          <form className='login-form'>
+          <form className='login-form' onSubmit={e => handleSubmit(e)}>
             <div className='field'>
               <div>
                 <AtComponent width={13} height={16} fill='#BFC5CF' />
@@ -71,7 +75,7 @@ export const Login = () => {
               </p>
             </div>
 
-            <button className='btn btn-primary' onSubmit={handleSubmit}>
+            <button className='btn btn-primary' type='submit'>
               Login
             </button>
           </form>
