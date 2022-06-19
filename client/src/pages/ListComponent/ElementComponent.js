@@ -33,7 +33,7 @@ export const Elemento = (props) =>{
 }
 
 // este para mostrar los comentario ya ingresado guardados en la BD
-export const ElementShow = (props) =>{
+export const List_Show_Data = (prop) =>{
     
     return(
         <>
@@ -48,10 +48,10 @@ export const ElementShow = (props) =>{
                 <input type={"checkbox"} className="auditable_element_box"/>
             </div>
         
-            <p className="auditable_element_question">{props.pregunta}</p>
+            <p className="auditable_element_question">{prop.pregunta}</p>
 
             <div>
-                <p className="auditable_element_areatext">{props.comment}</p>
+                <p className="auditable_element_areatext">{prop.comment}</p>
             </div>
             
             
