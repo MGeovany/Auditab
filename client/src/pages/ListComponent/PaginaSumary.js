@@ -1,6 +1,8 @@
 import react from "react";
 import "./ElementModule.css"
-import { PageCard, AuditorForm } from "./PageCard";
+import { PageCard, AuditorForm } from "./PageCardComponent";
+
+// Es la primera pagina del sumary donde se crean y se ven los reportes de la base de datos
 
 export const AuditPage = () =>{
 

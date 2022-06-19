@@ -1,9 +1,11 @@
 import react from "react";
 import "./ElementModule.css"
 
-
+// este es para el formulario de ingreso del comentario
 export const Elemento = (props) =>{
+
     let holder = "  COMENTARIOS ADICIONALES"
+
     return(
         <>
         <div className="element_style_card">
@@ -30,6 +32,7 @@ export const Elemento = (props) =>{
 
 }
 
+// este para mostrar los comentario ya ingresado guardados en la BD
 export const ElementShow = (props) =>{
     
     return(
@@ -58,6 +61,7 @@ export const ElementShow = (props) =>{
 
 }
 
+// este no me acuerdo
 export const AuditPage_card_list = (prop) =>{
     return(
         <>

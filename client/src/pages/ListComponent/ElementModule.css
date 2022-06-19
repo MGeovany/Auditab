@@ -145,7 +145,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 500px;
     height: 450px;
-    margin: 130px 0px 120px 200px;
+    margin: 120px 0px 120px 220px;
 }
 
 .auditpage_card_title1{
@@ -162,4 +162,66 @@
 .aditpage_card_bttn{
     color: #D2D3D9;
     font: normal normal normal 23px/128px Poppins;
+}
+
+.auditpage_card_listaudit{
+    font-family: "Poppins", sans-serif;
+    color : #7771de;
+    font-size: x-large;
+    font-weight: 700;
+    margin : 1rem 0.5rem 1rem 2rem;
+    width: auto;
+    height: auto;
+}
+
+.auditpage_card_report{
+    font-family: "Poppins", sans-serif;
+    color : #111217;
+    font-size: x-large;
+    font-weight: 700;
+    margin : 1rem 2rem 1rem 0rem;
+    width: auto;
+    height: auto;
+}
+
+.auditpage_border{
+    border-top : 1px solid #bfc5cf;
+    width: 400px;
+    margin: 0px 20px 0px 20px;
+}
+
+.auditpage_auditfrom_textarea{
+    border-radius: 10px;
+    opacity: 1;
+    background: var(--unnamed-color-ecebf8) 0% 0% no-repeat padding-box;
+    background: #ECEBF8 0% 0% no-repeat padding-box;
+    width: 395px;
+    height: 41px;
+    border: 0;
+    font-size: x-large;
+    font-family : "Poppins", sans-serif;
+    color : #15274c;
+}
+
+.auditpage_p_1{
+    color : #bfc5cf;
+    margin-left : auto;
+    font-size : large;
+    font-family : "Poppins", sans-serif;
+}
+
+.auditpage_auditfrom_button{
+    top: 851px;
+    left: 1263px;
+    width: 280px;
+    height: 63px;
+    background: var(--unnamed-color-7260d9) 0% 0% no-repeat padding-box;
+    background: #7260D9 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+    border : 0;
+    font-family: "Black Han Sans", sans-serif;
+    font-size: large;
+    font-weight: 650;
+    color : white;
 }

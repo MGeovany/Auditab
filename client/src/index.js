@@ -1,12 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
+import { Show_Audit_Table } from './pages/ListComponent/FormularioVistasAuditorias'
 
-import { AuditPage } from './pages/ListComponent/AuditPage'
+let valores = [{pregunta : "hola", comment : "x"},{pregunta : "hola", comment : "x"},{pregunta : "hola", comment : "x"}];
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
-    <AuditPage/>
+    <Show_Audit_Table {...valores}/>
   </React.StrictMode>
 )

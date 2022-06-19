@@ -1,6 +1,7 @@
-import { Elemento } from "./ElementModule"
+import { Elemento } from "./ElementComponent"
 import "../ListComponent/ElementModule.css";
 
+// es el formulario de preguntas que se despliga cuando se crea una nueva entrada para la auditoria
 
 export const Lista_module =()=>{
 
