@@ -5,8 +5,7 @@ import {
   Input,
   InputWrapper,
   Button,
-  MantineProvider,
-  useMantineTheme
+  MantineProvider
 } from '@mantine/core'
 import '../styles/assetStyle.css'
 import { AssetTable } from '../components/AssetTable'
@@ -15,19 +14,14 @@ import { useModals } from '@mantine/modals'
 export const Asset = () => {
   const modals = useModals()
 
-  const theme = useMantineTheme()
-
   const openContextModal = () =>
     modals.openContextModal('addAssetModal', {
-      overlayColor:
-        theme.colorScheme === 'dark'
-          ? theme.colors.dark[9]
-          : theme.colors.gray[2],
       overlayOpacity: 0.55,
       overlayBlur: 3,
       centered: true,
       padding: 'xl',
-      size: '1700px',
+      size: '500px',
+      overflow: 'outside',
       innerProps: {
         type: 'asset'
       }
