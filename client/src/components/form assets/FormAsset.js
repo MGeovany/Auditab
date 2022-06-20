@@ -7,7 +7,7 @@ import { useUncontrolled } from '@mantine/hooks'
 import { NativeSelect } from '@mantine/core'
 import '../../styles/assetStyle.css'
 
-import { SoftwareAsset } from './SoftwareAsset'
+import { SoftwareAsset } from './SoftwareAsset.js'
 import { HardwareAsset } from './HardwareAsset'
 import { DatabaseAsset } from './DatabaseAsset'
 import { ProjectsAsset } from './ProjectsAsset'
