@@ -20,30 +20,36 @@ export const Login = () => {
               <div className='field'>
                 <div>
                   <AtComponent width={13} height={16} fill='#BFC5CF' />
-                  <label>Email ID</label>
+                  <label className='lab'>Email ID</label>
                 </div>
-                <input type='text' className='email-id' id='email-id'></input>
+                <input
+                  type='text'
+                  className='email-id input'
+                  id='email-id'
+                ></input>
               </div>
 
               <div className='field'>
                 <div>
                   <LockComponent width={15} height={20} fill='#BFC5CF' />
-                  <label>Password</label>
+                  <label className='lab'>Password</label>
                 </div>
                 <input
                   type='password'
-                  className='password'
+                  className='password input'
                   id='password'
                 ></input>
-                <p>
-                  <a href='#email-id'>Forgot password?</a>
+                <p className='parr'>
+                  <a className='anchor' href='#email-id'>
+                    Forgot password?
+                  </a>
                 </p>
               </div>
 
               <button className='btn btn-primary'>Login</button>
             </form>
             <div className='other-logins'>
-              <p>Or, Login with...</p>
+              <p className='parr'>Or, Login with...</p>
               <div className='button-logins'>
                 <div className='button-container'>
                   <img
@@ -68,8 +74,11 @@ export const Login = () => {
                 </div>
               </div>
               <div className='register-text'>
-                <p>
-                  New on AUDITAB?<a href='/register'>Register</a>
+                <p className='parr'>
+                  New on AUDITAB?
+                  <a className='anchor' href='/signup'>
+                    Register
+                  </a>
                 </p>
               </div>
             </div>

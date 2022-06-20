@@ -43,39 +43,50 @@ export const Signup = () => {
                 </div>
               </div>
               <div className='register-text'>
-                <p>Or, register with an email...</p>
+                <p className='parr'>Or, register with an email...</p>
               </div>
               <form className='login-form'>
                 <div className='field'>
                   <div>
                     <UserComponent width={14} height={16} fill='#BFC5CF' />
-                    <label>Username</label>
+                    <label className='lab'>Username</label>
                   </div>
-                  <input type='text' className='user-id' id='user-id'></input>
+                  <input
+                    type='text'
+                    className='user-id input'
+                    id='user-id'
+                  ></input>
                 </div>
 
                 <div className='field'>
                   <div>
                     <AtComponent width={14} height={16} fill='#BFC5CF' />
-                    <label>Email ID</label>
+                    <label className='lab'>Email ID</label>
                   </div>
-                  <input type='text' className='email-id' id='email-id'></input>
+                  <input
+                    type='text'
+                    className='email-id input'
+                    id='email-id'
+                  ></input>
                 </div>
 
                 <div className='field'>
                   <div>
                     <LockComponent width={15} height={20} fill='#BFC5CF' />
-                    <label>Password</label>
+                    <label className='lab'>Password</label>
                   </div>
                   <input
                     type='password'
-                    className='password'
+                    className='password input'
                     id='password'
                   ></input>
                 </div>
                 <div className='register-text'>
-                  <p>
-                    Already User?<a href='/login'>Login</a>
+                  <p className='parr'>
+                    Already User?
+                    <a className='anchor' href='/login'>
+                      Login
+                    </a>
                   </p>
                 </div>
 
