@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
-import { SoftwareAsset } from './form assets/SoftwareAsset'
+import { FormAsset } from '../components/form assets/FormAsset'
 
 export const addAssetModal = ({ context, id, innerProps }) => (
   <>
@@ -10,7 +10,7 @@ export const addAssetModal = ({ context, id, innerProps }) => (
       </div>
 
       <div className='asset__modal__body'>
-        <SoftwareAsset />
+        <FormAsset />
       </div>
     </div>
 
