@@ -1,10 +1,10 @@
 import * as React from 'react'
-import { Table, MantineProvider } from '@mantine/core'
+import { Table } from '@mantine/core'
 /* import PropTypes from 'prop-types' */
 
 const elements = [
   {
-    id: 'ID4504',
+    id: 'ID4dasd504',
     process: 'Gestion de la calidad',
     date: '2021-2-5',
     req: 'ISO 9001',
@@ -12,7 +12,7 @@ const elements = [
     desc: 'Se evidencia que los registros de las acciones correctivas 23 y 26 estan documentadas, a pesar de que en la retencion documental se especifica que se deben registrar en el software.'
   },
   {
-    id: 'ID4504',
+    id: 'ID4dasds504',
     process: 'Gestion de la calidad',
     date: '2021-2-5',
     req: 'ISO 9001',
@@ -20,7 +20,7 @@ const elements = [
     desc: 'Se evidencia que los registros de las acciones correctivas 23 y 26 estan documentadas, a pesar de que en la retencion documental se especifica que se deben registrar en el software.'
   },
   {
-    id: 'ID4504',
+    id: 'ID45sada04',
     process: 'Gestion de la calidad',
     date: '2021-2-5',
     req: 'ISO 9001',
@@ -28,7 +28,7 @@ const elements = [
     desc: 'Se evidencia que los registros de las acciones correctivas 23 y 26 estan documentadas, a pesar de que en la retencion documental se especifica que se deben registrar en el software.'
   },
   {
-    id: 'ID4504',
+    id: 'ID4ds504',
     process: 'Gestion de la calidad',
     date: '2021-2-5',
     req: 'ISO 9001',
@@ -36,7 +36,7 @@ const elements = [
     desc: 'Se evidencia que los registros de las acciones correctivas 23 y 26 estan documentadas, a pesar de que en la retencion documental se especifica que se deben registrar en el software.'
   },
   {
-    id: 'ID4504',
+    id: 'ID45das04',
     process: 'Gestion de la calidad',
     date: '2021-2-5',
     req: 'ISO 9001',
@@ -59,24 +59,19 @@ export default function IncidentsTable() {
 
   return (
     <div className='table-container-c'>
-      <MantineProvider
-        theme={{ fontFamily: 'Poppins, sans-serif' }}
-        withGlobalStyles
-      >
-        <Table>
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Process</th>
-              <th>Date</th>
-              <th>Requirement</th>
-              <th>Type</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>{rows}</tbody>
-        </Table>
-      </MantineProvider>
+      <Table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Process</th>
+            <th>Date</th>
+            <th>Requirement</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>{rows}</tbody>
+      </Table>
     </div>
   )
 }
