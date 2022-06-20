@@ -1,66 +1,39 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable space-before-function-paren */
-import * as React from 'react'
-import { Table } from '@mantine/core'
 /* import PropTypes from 'prop-types' */
+import * as React from 'react'
+import { DatabaseTable } from './table assets/DatabaseTable'
+import { FurnitureTable } from './table assets/FurnitureTable'
+import { HardwareTable } from './table assets/HardwareTable'
+import { JobTable } from './table assets/JobTable'
+import { MaintenanceTable } from './table assets/MaintenanceTable'
+import { NetworksTable } from './table assets/NetworksTable'
+import { ProjectsTable } from './table assets/ProjectsTable'
+import { SoftwareTable } from './table assets/SoftwareTable'
+import { SuppliesTable } from './table assets/SuppliesTable'
 
-import { useState, useEffect } from 'react'
-import axios from 'axios'
-
-const elements1 = [
-  {
-    id: 'ID4433504',
-    description: 'Laptop Computer with Windows 10',
-    dateAdded: '2021-2-5',
-    dateExpration: '2022-2-5',
-    price: 12.95
-  }
-]
-
-export function AssetTable() {
-  const [elements, setElements] = useState(elements1)
-
-  const getSoftware = async () => {
-    try {
-      const response = await axios.get('http://localhost:5000/auditab/software')
-      setElements(response.data)
-      console.log(response)
-    } catch (error) {
-      console.log(error)
-    }
-  }
-
-  useEffect(() => {
-    getSoftware()
-  }, [])
-  const rows = elements.map(element => (
-    <tr key={element._id}>
-      <td>{element._id}</td>
-      <td>{element.description}</td>
-      <td>{element.dateAdded}</td>
-      <td>{element.dateExpiration}</td>
-      <td>{element.price} $</td>
-    </tr>
-  ))
-
+export function AssetTable({ asset }) {
   return (
     <div className='table-container-c'>
-      <Table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Description</th>
-            <th>Date Added</th>
-            <th>Date Expiration</th>
-            <th>Price</th>
-          </tr>
-        </thead>
-        <tbody>{rows}</tbody>
-      </Table>
+      {asset === 'Software' ? (
+        <SoftwareTable />
+      ) : null || asset === 'Hardware' ? (
+        <HardwareTable />
+      ) : null || asset === 'DataBase' ? (
+        <DatabaseTable />
+      ) : null || asset === 'Projects' ? (
+        <ProjectsTable />
+      ) : null || asset === 'Job Position' ? (
+        <JobTable />
+      ) : null || asset === 'furniture and equipment' ? (
+        <FurnitureTable />
+      ) : null || asset === 'Networks' ? (
+        <NetworksTable />
+      ) : null || asset === 'Maintenance and backup' ? (
+        <MaintenanceTable />
+      ) : null || asset === 'Supplies or general' ? (
+        <SuppliesTable />
+      ) : null}
     </div>
   )
 }
-/* IncidentsTable.propTypes = {
-  elements: PropTypes.array.isRequired
-}
- */

@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 
 :root {
   /* Fonts: */
-  --poppins-regular: "Poppins", sans-serif;
-  --black-han: "Black Han Sans", sans-serif;
+  --poppins-regular: 'Poppins', sans-serif;
+  --black-han: 'Black Han Sans', sans-serif;
 
   /* Colors: */
   --navy: #15274c;

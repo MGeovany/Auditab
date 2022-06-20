@@ -1,6 +1,7 @@
 const express = require('express')
 var app = express()
 var cors = require('cors')
+require('dotenv').config()
 
 var mongoose = require('mongoose')
 const bodyParser = require('body-parser')
@@ -14,17 +15,24 @@ const jobRoute = require('./Routes/jobpositionRoute')
 const maintenaceRoute = require('./Routes/maintenacebackupRoute')
 const projectRoute = require('./Routes/projectRoute')
 const softwareRoute = require('./Routes/softwareRoute')
+const networkRoute = require('./Routes/networkRoute')
 
-PORT = process.env.PORT || 5000
-app.use(cors())
+const PORT = process.env.PORT || 4000
+const url = process.env.MONGODB_URI
 
-app.listen(PORT, () => console.log('App escuchando en el puerto', PORT))
+app.use(
+  cors({
+    origin: '*'
+  })
+)
 
 mongoose
-  .connect(
-    'mongodb+srv://George:vFyxnj0oMZQA212U@jorgetests.gmaz5.mongodb.net/AuditAppDataBase?retryWrites=true&w=majority'
+  .connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() =>
+    app.listen(PORT, () =>
+      console.log('Server up and running! on PORT:' + PORT)
+    )
   )
-  .catch(error => handleError(error))
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
@@ -38,7 +46,8 @@ app.use(
   jobRoute,
   maintenaceRoute,
   projectRoute,
-  softwareRoute
+  softwareRoute,
+  networkRoute
 )
 
 app.get('/', function (req, res) {

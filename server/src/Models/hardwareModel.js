@@ -6,7 +6,7 @@ const hardwareSchema = mongoose.Schema(
     description: { type: String, require: true },
     model: { type: String, require: true },
     price: { type: Number, require: true },
-    buyDate: { type: Date, require: true }
+    buyDate: { type: String, require: true }
   },
   {
     collection: 'Hardware'

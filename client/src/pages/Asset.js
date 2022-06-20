@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React from 'react'
+import React, { useState } from 'react'
 import {
   NativeSelect,
   Input,
@@ -26,6 +26,8 @@ export const Asset = () => {
         type: 'asset'
       }
     })
+
+  const [asset, setAsset] = useState('Software')
 
   return (
     <div>
@@ -56,6 +58,7 @@ export const Asset = () => {
                     'Supplies or general'
                   ]}
                   placeholder='Select'
+                  onChange={event => setAsset(event.currentTarget.value)}
                   label='Select the Asset'
                 />
               </div>
@@ -69,7 +72,7 @@ export const Asset = () => {
               </div>
             </div>
             <div className='asset__body__table'>
-              <AssetTable />
+              <AssetTable asset={asset} />
               <div className='asset__btns'>
                 <div className='asset__control'>
                   <Button

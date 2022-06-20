@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 const databaseSchema = mongoose.Schema(
   {
-    datebackedup: { type: Date, require: true },
+    dateBackedUp: { type: String, require: true },
     description: { type: String, require: true }
   },
   {

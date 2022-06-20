@@ -96,3 +96,29 @@
 .asset__modal__body {
   height: 100%;
 }
+
+.tab__btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+  padding-left: 2rem;
+}
+
+.btn__editar,
+.btn__eliminar {
+  font-size: 16px;
+  font-family: var(--black-han);
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.btn__editar {
+  color: var(--purple-light);
+  margin-right: 10px;
+}
+
+.btn__eliminar {
+  color: rgb(231, 109, 109);
+}

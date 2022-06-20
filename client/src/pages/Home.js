@@ -29,7 +29,7 @@ export const Home = () => {
             <FindsSvg width={52} height={60} />
           </div>
           <div className='card-text-home'>OBSERVATIONS</div>
-          <div className='card-number flex'>12</div>?
+          <div className='card-number flex'>12</div>
         </div>
         <div className='card-home'>
           <div className='img '>
