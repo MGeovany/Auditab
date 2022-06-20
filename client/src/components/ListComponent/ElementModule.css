@@ -1,0 +1,227 @@
+.element_style_card{
+    display: flex;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 1600px;
+    height: 80px;
+    margin: 1rem 1rem 3rem 50px;
+    background-color: #f8f9fb;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.list_style_card{
+    border: 2px solid rgb(240, 234, 234);
+    border-radius: 10px;
+    width: 1700px;
+    margin: 1rem 1rem 1rem 1rem;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.auditable_element_question{
+    width: 650px;
+    text-align: justify;
+    margin-left: 60px;
+    font-family: "Poppins", sans-serif;
+    font-size: large;
+    color: var(--navy);
+    margin-top: 7px;
+}
+
+.auditable_list_title{
+    width: 700px;
+    color: #7771de;
+    font-size: 1.5cm;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5rem;
+}
+.auditable_list_title2{
+    width: 700px;
+    color: #111217;
+    font-size: 1.5cm;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5rem;
+}
+
+.auditable_element_box{
+    height: 25px;
+    width: 25px;
+    margin: 25px 0px 0px 15px;
+}
+
+.auditable_element_button1{
+    width: 250px;
+    height: 60px;
+    margin: 2rem 1rem 1rem 3%;
+    border-radius: 5px;
+    background-color: #bfc5cf;
+    color : #f8f9fb;
+    border-color: #bfc5cf;
+    font-size: x-large;
+    font-weight: 700;
+    font-family: "Black Han Sans", sans-serif;
+}
+
+.auditable_element_button2{
+    width: 250px;
+    height: 60px;
+    margin: 2rem 0rem 1rem 65%;
+    border-radius: 5px;
+    color : white;
+    border-color: #0065ff;
+    background-color: #0065ff;
+    font-size: x-large;
+    font-weight: 700;
+    font-family: "Black Han Sans", sans-serif;
+}
+
+.auditable_element_areatext{
+    margin-left: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 600px;
+    height: 60px;
+    font-size: large;
+    border-radius: 5px;
+    border-color: #bfc5cf50;
+    border-width: 3px;
+    color: var(--mate);
+    background-color: #f8f9fb;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+
+.audittable_list_YN{
+    font-family: "Poppins", sans-serif;
+    margin: 25px 0px 0px 30px;
+    color: #111217;
+}
+
+.auditpage_title1{
+    width: auto;
+    color: #7771de;
+    font-size: 1.5cm;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin : 20px 0rem 20px 0rem;
+}
+
+.auditpage_title2{
+    width: 700px;
+    color: #111217;
+    font-size: 1.5cm;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 1rem;
+}
+
+.auditpage_p{
+    /* Layout Properties */
+    top: 130px;
+    left: 55px;
+    margin-bottom: 1cm;
+    width: 93px;
+    height: 27px;
+    /* UI Properties */
+    color: var(--unnamed-color-d2d3d9);
+    text-align: left;
+    font: normal normal normal 19px/128px Poppins;
+    letter-spacing: 0px;
+    color: #D2D3D9;
+    opacity: 1;
+}
+
+.auditpage_card{
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #f8f9fb;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 500px;
+    height: 450px;
+    margin: 120px 0px 120px 220px;
+}
+
+.auditpage_card_title1{
+    color: #7260d9;
+    font: italic normal 600 23px/128px Poppins;
+}
+
+.auditpage_card_title2{
+    color: #333333;
+    font: italic normal 600 23px/128px Poppins;
+    margin-left: 1rem;
+}
+
+.aditpage_card_bttn{
+    color: #D2D3D9;
+    font: normal normal normal 23px/128px Poppins;
+}
+
+.auditpage_card_listaudit{
+    font-family: "Poppins", sans-serif;
+    color : #7771de;
+    font-size: x-large;
+    font-weight: 700;
+    margin : 1rem 0.5rem 1rem 2rem;
+    width: auto;
+    height: auto;
+}
+
+.auditpage_card_report{
+    font-family: "Poppins", sans-serif;
+    color : #111217;
+    font-size: x-large;
+    font-weight: 700;
+    margin : 1rem 2rem 1rem 0rem;
+    width: auto;
+    height: auto;
+}
+
+.auditpage_border{
+    border-top : 1px solid #bfc5cf;
+    width: 400px;
+    margin: 0px 20px 0px 20px;
+}
+
+.auditpage_auditfrom_textarea{
+    border-radius: 10px;
+    opacity: 1;
+    background: var(--unnamed-color-ecebf8) 0% 0% no-repeat padding-box;
+    background: #ECEBF8 0% 0% no-repeat padding-box;
+    width: 395px;
+    height: 41px;
+    border: 0;
+    font-size: x-large;
+    font-family : "Poppins", sans-serif;
+    color : #15274c;
+}
+
+.auditpage_p_1{
+    color : #bfc5cf;
+    margin-left : auto;
+    font-size : large;
+    font-family : "Poppins", sans-serif;
+}
+
+.auditpage_auditfrom_button{
+    top: 851px;
+    left: 1263px;
+    width: 280px;
+    height: 63px;
+    background: var(--unnamed-color-7260d9) 0% 0% no-repeat padding-box;
+    background: #7260D9 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+    border : 0;
+    font-family: "Black Han Sans", sans-serif;
+    font-size: large;
+    font-weight: 650;
+    color : white;
+}
