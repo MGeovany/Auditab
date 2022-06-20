@@ -1,5 +1,11 @@
 import React from 'react'
+import { Navbar } from '../components/Navbar'
 
 export const Audit = () => {
-  return <div>Audit</div>
+  return (
+    <>
+      <Navbar />
+      <div>Audit</div>
+    </>
+  )
 }

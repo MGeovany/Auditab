@@ -9,7 +9,6 @@ import { LandingPage } from './components/LandingPage'
 import { Login } from './components/Login'
 import { Signup } from './components/Signup'
 import { Home } from './pages/Home'
-import { Navbar } from './components/Navbar'
 import { Asset } from './pages/Asset'
 
 import { addAssetModal } from './modals/addAssetModal'
@@ -24,7 +23,6 @@ function App() {
     <ModalsProvider modals={{ addAssetModal }}>
       <div className='App'>
         <Router>
-          {logged ? <Navbar /> : null}
           <Routes>
             <Route exact path='/' element={<LandingPage />} />
             <Route exact path='login' element={<Login />} />
