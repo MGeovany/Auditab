@@ -1,6 +1,6 @@
 import react from "react";
-import "./ElementModule.css";
-import { List_Show_Data } from "./ElementComponent";
+import "../../styles/ElementModule.css"
+import { List_Show_Data } from "../ListComponent/ElementComponent";
 
 // muestra todos los datos de las reportes que se han guardado en el base de datos
 

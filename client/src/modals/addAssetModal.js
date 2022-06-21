@@ -18,4 +18,10 @@ export const addAssetModal = ({ context, id, innerProps }) => (
       Close modal
     </Button> */}
   </>
-)
+);
+/* 
+export const addAuditModal = ({context, id, innerProps }) =>{
+  <>
+    <AuditorForm/>
+  </>
+} */

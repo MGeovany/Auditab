@@ -1,9 +1,10 @@
-import { Elemento } from "./ElementComponent"
-import "../ListComponent/ElementModule.css";
+import { Elemento } from "../ListComponent/ElementComponent"
+import "../../styles/ElementModule.css"
+
 
 // es el formulario de preguntas que se despliga cuando se crea una nueva entrada para la auditoria
 
-export const Lista_Auditable =()=>{
+export const ListaAuditable =()=>{
 
     let Lista_Preguntas = [
         {pregunta : "¿En los momentos anteriores del incidente se estaban realizando las operaciones de la manera que lo describe el reglamento?"},
