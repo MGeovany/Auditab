@@ -16,10 +16,20 @@ const projectRoute = require('./Routes/projectRoute')
 const softwareRoute = require('./Routes/softwareRoute')
 const userRoute = require('./Routes/usersRoute')
 
-PORT = process.env.PORT || 5000
-app.use(cors())
+app.listen(3000, () => console.log('Corriendo en el puerto 3000!'))
 
-app.listen(PORT, () => console.log('App escuchando en el puerto', PORT))
+const whitelist = ['http://localhost:3001']
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (!origin || whitelist.indexOf(origin) !== -1) {
+      callback(null, true)
+    } else {
+      callback(new Error('Not allowed by CORS'))
+    }
+  },
+  credentials: true
+}
+app.use(cors(corsOptions))
 
 mongoose
   .connect(

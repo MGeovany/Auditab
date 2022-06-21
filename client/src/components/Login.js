@@ -22,7 +22,7 @@ export const Login = () => {
     const data = { user, password }
     try {
       const res = await axios.post(
-        'http://localhost:5000/auditab/users/auth',
+        'http://localhost:3000/auditab/users/auth',
         qs.stringify(data)
       )
       console.log('data', res)

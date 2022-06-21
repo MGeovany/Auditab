@@ -23,18 +23,16 @@ function App() {
   return (
     <>
       <div className='App'>
-        <Router>
-          {logged ? <Navbar /> : null}
-          <Routes>
-            <Route exact path='/' element={<LandingPage />} />
-            <Route exact path='login' element={<Login />} />
-            <Route exact path='signup' element={<Signup />} />
-            <Route exact path='/home' element={<Home />} />
-            <Route exact path='/asset' element={<Asset />} />
-            <Route exact path='/summary' element={<Summary />} />
-            <Route exact path='/audit' element={<Audit />} />
-          </Routes>
-        </Router>
+        {logged ? <Navbar /> : null}
+        <Routes>
+          <Route exact path='/' element={<LandingPage />} />
+          <Route exact path='login' element={<Login />} />
+          <Route exact path='signup' element={<Signup />} />
+          <Route exact path='/home' element={<Home />} />
+          <Route exact path='/asset' element={<Asset />} />
+          <Route exact path='/summary' element={<Summary />} />
+          <Route exact path='/audit' element={<Audit />} />
+        </Routes>
       </div>
     </>
   )

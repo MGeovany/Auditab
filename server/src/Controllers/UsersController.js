@@ -1,7 +1,7 @@
-const usersModel = require('../models/usersModel')
+const Model = require('../Models/usersModel')
 
 function createUser(req, res) {
-  const user = new usersModel({
+  const user = new Model({
     username: req.body.username,
     password: req.body.password,
     access: req.body.access
@@ -16,7 +16,7 @@ function createUser(req, res) {
 }
 
 function updateUser(req, res) {
-  usersModel.findById(req.params.id, function (err, user) {
+  Model.findById(req.params.id, function (err, user) {
     if (err) res.status(500).send('Error en la base de datos')
     else {
       if (user != null) {
@@ -35,14 +35,18 @@ function updateUser(req, res) {
 }
 
 function getAllUsers(req, res) {
-  usersModel.find((err, users) => {
-    if (err) res.status(500).send('Error en la base de datos1')
-    else res.status(200).json(users)
+  Model.find({}, function (err, users) {
+    if (err) res.status(500).send('Error en la base de datos')
+    else {
+      if (users != null) {
+        res.status(200).json(users)
+      } else res.status(404).send('No se encontro la base de datos')
+    }
   })
 }
 
 function getbyName(req, res) {
-  usersModel.find({ username: req.query.username }, function (err, users) {
+  Model.find({ username: req.query.username }, function (err, users) {
     if (err) res.status(500).send('Error en la base de datos6 ')
     else {
       if (users != null) {
@@ -53,7 +57,7 @@ function getbyName(req, res) {
 }
 
 function getbyID(req, res) {
-  usersModel.findById(req.params.id, function (err, users) {
+  Model.findById(req.params.id, function (err, users) {
     if (err) res.status(500).send('Error en la base de datos4 ')
     else {
       if (users != null) {
@@ -64,7 +68,7 @@ function getbyID(req, res) {
 }
 
 function deleteUser(req, res) {
-  usersModel.findByIdAndRemove(req.params.id, function (err, users) {
+  Model.findByIdAndRemove(req.params.id, function (err, users) {
     if (err) res.status(500).send('Error en la base de datos')
     else {
       if (users != null) {
@@ -75,7 +79,7 @@ function deleteUser(req, res) {
 }
 
 function authUser(req, res) {
-  usersModel.findOne(
+  Model.findOne(
     { username: req.body.username, password: req.body.password },
     function (err, user) {
       if (err) res.status(500).send('Error en la base de datos')
