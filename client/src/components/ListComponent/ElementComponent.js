@@ -1,5 +1,4 @@
-import react from "react";
-import "./ElementModule.css"
+import "../../styles/ElementModule.css"
 
 // este es para el formulario de ingreso del comentario
 export const Elemento = (props) =>{

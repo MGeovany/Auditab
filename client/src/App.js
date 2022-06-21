@@ -14,13 +14,15 @@ import { Asset } from './pages/Asset'
 import { addAssetModal } from './modals/addAssetModal'
 import { Summary } from './pages/Summary'
 import { Audit } from './pages/Audit'
+import { auditModal } from './modals/auditModal'
+import { auditModalShow } from './modals/auditModalShow'
 
 function App() {
   // eslint-disable-next-line no-unused-vars
   const [logged, setLogged] = useState(true)
 
   return (
-    <ModalsProvider modals={{ addAssetModal }}>
+    <ModalsProvider modals={{ addAssetModal, auditModal, auditModalShow }}>
       <div className='App'>
         <Router>
           <Routes>
